@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: #eee;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 80%;
+  min-height: 100vh;
+}
+
+.backlog {
+  width: 20%;
+  min-height: 100vh;
+  background-color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.button {
+  background-color: #00bd25;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  min-width: 50px;
+  line-height: 23px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button:hover {
+  background-color: #00991e;
+  color: #eee;
+}
+
+.scedule {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0px;
+  grid-template-areas:
+    ". dates"
+    "users tasks";
+  padding: 5px;
+  width: max-content;
+}
+/*
+.scedule__item {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #333;
+} */
+
+.scedule__dates {
+  grid-area: dates;
+  display: flex;
+  min-width: min-content;
+  border: 0;
+  height: min-content;
+}
+
+.scedule__date {
+  width: 100px;
+  height: 25px;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 25px;
+}
+
+.scedule__users {
+  grid-area: users;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+}
+
+.scedule__user {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 100px;
+  background-color: #00bd25;
+  color: #fff;
+}
+
+.scedule__tasks {
+  grid-area: tasks;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.scedule__task {
+  height: 100px;
+  width: 100px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
