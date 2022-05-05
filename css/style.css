@@ -26,12 +26,12 @@ html, body, h1, h2, h3, p, ul, li {
 }
 
 .content {
-  width: 80%;
+  width: 75%;
   min-height: 100vh;
 }
 
 .backlog {
-  width: 20%;
+  width: 25%;
   min-height: 100vh;
   background-color: #ccc;
 }
@@ -132,6 +132,7 @@ html, body, h1, h2, h3, p, ul, li {
   justify-content: space-between;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 15px;
 }
 
 .backlog__input {
@@ -161,4 +162,30 @@ html, body, h1, h2, h3, p, ul, li {
 
 .backlog__button:hover {
   background-color: #eee;
+}
+
+.backlog__tasks {
+  list-style-type: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.backlog__task {
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding: 7px;
+  cursor: all-scroll;
+}
+
+.backlog__task-title {
+  font-size: 14px;
+  color: #003aa5;
+  margin-bottom: 5px;
+}
+
+.backlog__task-description {
+  font-size: 12px;
 }
