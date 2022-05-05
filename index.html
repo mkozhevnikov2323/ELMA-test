@@ -24,9 +24,7 @@
         <div class="scedule__date">29.08</div>
       </div>
       <div class="scedule__item scedule__users">
-        <div class="scedule__user">Иван</div>
-        <div class="scedule__user">Петр</div>
-        <div class="scedule__user">Артем</div>
+
       </div>
       <div class="scedule__item scedule__tasks">
         <div class="scedule__task"></div>
@@ -65,45 +63,53 @@
         <h3 class="backlog__task-title">Jira</h3>
         <p class="backlog__task-description">Не приходят PUSH уведомления на Android</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">Jira</h3>
         <p class="backlog__task-description">Не приходят PUSH уведомления на Android</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-10111</h3>
         <p class="backlog__task-description">Не создаются задачи ознакомления</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-17577</h3>
         <p class="backlog__task-description">Некорректная работа элемента ввод данных</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-17577</h3>
         <p class="backlog__task-description">Устранение XSS уязвимостей системы</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">Jira</h3>
         <p class="backlog__task-description">Не приходят PUSH уведомления на Android</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">Jira</h3>
         <p class="backlog__task-description">Не приходят PUSH уведомления на Android</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-10111</h3>
         <p class="backlog__task-description">Не создаются задачи ознакомления</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-17577</h3>
         <p class="backlog__task-description">Некорректная работа элемента ввод данных</p>
       </li>
-      <li class="backlog__task">
+      <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-17577</h3>
         <p class="backlog__task-description">Устранение XSS уязвимостей системы</p>
       </li>
     </ul>
   </aside>
 
+  <template id="users-template">
+    <div class="scedule__user js-cell">Иван</div>
+  </template>
+
+  <script src="js/Card.js"></script>
+  <script src="js/Section.js"></script>
+  <script src="js/tasks.js"></script>
+  <script src="js/users.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

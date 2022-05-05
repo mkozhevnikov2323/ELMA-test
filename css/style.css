@@ -25,6 +25,10 @@ html, body, h1, h2, h3, p, ul, li {
   justify-content: space-between;
 }
 
+.hide {
+  display: none;
+}
+
 .content {
   width: 75%;
   min-height: 100vh;
@@ -103,9 +107,12 @@ html, body, h1, h2, h3, p, ul, li {
   width: 100px;
   border: 1px solid #333;
   text-align: center;
-  line-height: 100px;
   background-color: #00bd25;
   color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
 }
 
 .scedule__tasks {
