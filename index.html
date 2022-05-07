@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Планировщик задач ELMA</title>
+  <style>
+    .calendarDiv {
+      display: none;
+    }
+    #calendarTable_1 {
+      display: block;
+    }
+  </style>
 </head>
 <body class="page">
   <main class="content">
     <div class="buttons">
-      <button class="button button__prev">Left</button>
-      <button class="button button__prev">Right</button>
+      <button class="button button__prev" id='calendarPrev' onclick='callPrev()' disabled>Left</button>
+      <button class="button button__prev" id='calendarNext' onclick='callNext()'>Right</button>
     </div>
+    <div id="calendar"></div>
     <div class="scedule">
       <div class="scedule__item scedule__dates">
         <div class="scedule__date scedule__date_type_monday">23.08</div>
