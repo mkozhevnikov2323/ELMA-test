@@ -47,6 +47,5 @@ function renderCalendar(calendarNode, datesArr) {
 }
 
 renderCalendar(dayCell, datesForTable);
-// dayCell.forEach((item, i) => {
-//   item.textContent = datesForTable[i];
-// })
+
+
