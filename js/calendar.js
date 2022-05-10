@@ -1,4 +1,4 @@
-// const dayCellContainer = document.querySelector('.scedule__dates');
+const dayCellContainer = document.querySelector('.scedule__dates');
 const dayCell = document.querySelectorAll('.scedule__date');
 
 const dateStartCalendar = '2022-05-01';

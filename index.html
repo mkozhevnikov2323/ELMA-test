@@ -24,13 +24,13 @@
     <div id="calendar"></div>
     <div class="scedule">
       <div class="scedule__item scedule__dates">
-        <div class="scedule__date scedule__date_type_monday">23.08</div>
+        <!-- <div class="scedule__date scedule__date_type_monday">23.08</div>
         <div class="scedule__date">24.08</div>
         <div class="scedule__date">25.08</div>
         <div class="scedule__date">26.08</div>
         <div class="scedule__date">27.08</div>
         <div class="scedule__date">28.08</div>
-        <div class="scedule__date">29.08</div>
+        <div class="scedule__date">29.08</div> -->
       </div>
       <div class="scedule__item scedule__users">
 
@@ -68,7 +68,7 @@
       <button class="backlog__button"></button>
     </form>
     <ul class="backlog__tasks">
-      <li class="backlog__task" draggable="true">
+      <!-- <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">Jira</h3>
         <p class="backlog__task-description">Не приходят PUSH уведомления на Android</p>
       </li>
@@ -107,12 +107,23 @@
       <li class="backlog__task" draggable="true">
         <h3 class="backlog__task-title">ELMA-17577</h3>
         <p class="backlog__task-description">Устранение XSS уязвимостей системы</p>
-      </li>
+      </li> -->
     </ul>
   </aside>
 
   <template id="users-template">
-    <div class="scedule__user js-cell">Иван</div>
+    <div class="scedule__user js-cell"></div>
+  </template>
+
+  <template id="dates-template">
+    <div class="scedule__date"></div>
+  </template>
+
+  <template id="tasks-template">
+    <li class="backlog__task" draggable="true">
+      <h3 class="backlog__task-title">ELMA-17577</h3>
+      <p class="backlog__task-description">Устранение XSS уязвимостей системы</p>
+    </li>
   </template>
 
   <script src="js/calendar.js"></script>
